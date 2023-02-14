@@ -58,19 +58,19 @@ const Portfolio = () => {
             <h5>My Recent Work</h5>
             <h2>Portfolio</h2>
             <div className="container portfolio-container">
-                {data.map(({ id, image, title, github, demo }) => {
+                {data.map((portfolio) => {
                     return (
-                        <article key={id} className="portfolio-item">
+                        <article key={portfolio.id} className="portfolio-item">
                             <div className="portfolio-item-image">
-                                <img src={image} alt={title} />
+                                <img src={portfolio.image} alt={portfolio.title} />
                             </div>
 
-                            <h3>{title}</h3>
+                            <h3>{portfolio.title}</h3>
 
                             <div className="portfolio-item-cta">
                                 {" "}
                                 <a
-                                    href={github}
+                                    href={portfolio.github}
                                     className="btn"
                                     target="_blank"
                                     rel="noreferrer"
@@ -78,7 +78,7 @@ const Portfolio = () => {
                                     Github
                                 </a>
                                 <a
-                                    href={demo}
+                                    href={portfolio.demo}
                                     className="btn btn-primary"
                                     target="_blank"
                                     rel="noreferrer"

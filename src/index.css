@@ -87,6 +87,10 @@ a:hover {
     background: var(--color-white);
     color: var(--color-bg);
 }
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
 img {
     display: block;
     width: 100%;
