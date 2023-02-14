@@ -1,7 +1,7 @@
 .container.contact-container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 50%;
+    grid-template-columns: 38% 50%;
     gap: 12%;
 }
 
@@ -37,23 +37,52 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 3rem;
 }
 input,
 textarea {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
 }
+.btn.btn-primary.form-btn {
+    padding: 0.7rem 1.1rem;
+    font-size: 1rem;
+}
 
 @media screen and (max-width: 1024px) {
     .container.contact-container {
         grid-template-columns: 1fr;
+        gap: 3rem;
+        width: 68%;
+    }
+    .contact-options {
+        flex-direction: unset;
+        justify-content: center;
         gap: 2rem;
+    }
+    .contact-option:nth-last-of-type(1),
+    .contact-option:nth-last-of-type(3) {
+        flex-basis: 25%;
+    }
+    .contact-option:nth-last-of-type(2) {
+        transform: scale(1.1);
+    }
+    .contact-option:nth-last-of-type(3) form {
+        gap: 2rem;
+        align-items: center;
+    }
+    form {
+        gap: 2rem;
+        align-items: center;
+    }
+    input,
+    textarea {
+        width: 70%;
     }
 }
 

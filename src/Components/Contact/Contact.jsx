@@ -26,6 +26,18 @@ const Contact = () => {
             <div className="container contact-container">
                 <div className="contact-options">
                     <article className="contact-option">
+                        <BsWhatsapp className="contact-option-icon" />
+                        <h4>WhatsApp</h4>
+                        <h5>+216 53 605 761</h5>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=21653605761"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Send a message
+                        </a>
+                    </article>
+                    <article className="contact-option">
                         <MdOutlineEmail className="contact-option-icon" />
                         <h4>Email</h4>
                         <h5>marouen.gimii@gmail.com</h5>
@@ -37,18 +49,6 @@ const Contact = () => {
                         <h5>Marouen Maatoug</h5>
                         <a
                             href="https://m.me/profile.php?id=100005059277633"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Send a message
-                        </a>
-                    </article>
-                    <article className="contact-option">
-                        <BsWhatsapp className="contact-option-icon" />
-                        <h4>WhatsApp</h4>
-                        <h5>+216 53 605 761</h5>
-                        <a
-                            href="https://api.whatsapp.com/send?phone=21653605761"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -70,7 +70,7 @@ const Contact = () => {
                         placeholder="Your Message"
                         required
                     ></textarea>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary form-btn">
                         Send Message
                     </button>
                 </form>

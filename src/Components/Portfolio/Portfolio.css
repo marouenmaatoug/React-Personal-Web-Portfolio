@@ -20,24 +20,25 @@
     overflow: hidden;
 }
 .portfolio-item h3 {
-    margin: 1.2rem 0 2rem;
+    height: 9rem;
+    padding: 1rem 0;
 }
 .portfolio-item-cta {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .portfolio-container {
         grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 3rem;
     }
 }

@@ -1,7 +1,7 @@
 header {
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+    padding-top: 4rem;
+    /* overflow: hidden; */
+    height: max-content;
 }
 .header-container {
     text-align: center;
@@ -27,7 +27,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 6rem;
 }
 .header-socials::after {
     content: "";
@@ -42,7 +42,7 @@ header {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
-    position: absolute;
+    position: relative;
     left: calc(50% - 11rem);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
@@ -55,22 +55,13 @@ header {
 .scroll-down {
     position: absolute;
     right: -2.3rem;
-    bottom: 5rem;
+    bottom: 9rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
 }
 
-@media screen and (max-width: 1024px) {
-    header {
-        height: 68vh;
-    }
-}
-
 @media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
     .header-socials,
     .scroll-down {
         display: none;
