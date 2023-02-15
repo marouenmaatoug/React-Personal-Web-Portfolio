@@ -34,15 +34,17 @@ const About = () => {
                             <small>+80 Completed</small>
                         </article>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-                        doloribus perferendis ad expedita consequatur voluptate voluptas
-                        veritatis nesciunt itaque modi dolores corrupti a unde at officia,
-                        alias adipisci repellendus omnis!
-                    </p>
-                    <a href="#contact" className="btn btn-primary">
-                        Let's Talk
-                    </a>
+                    <div className="about-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Impedit doloribus perferendis ad expedita consequatur
+                            voluptate voluptas veritatis nesciunt itaque modi dolores
+                            corrupti a unde at officia, alias adipisci repellendus omnis!
+                        </p>
+                        <a href="#contact" className="btn btn-primary">
+                            Let's Talk
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
