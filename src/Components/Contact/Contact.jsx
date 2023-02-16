@@ -46,7 +46,7 @@ const Contact = () => {
                     <article className="contact-option">
                         <RiMessengerLine className="contact-option-icon" />
                         <h4>Messenger</h4>
-                        <h5>Marouen Maatoug</h5>
+                        <h5>marouenmaatoug</h5>
                         <a
                             href="https://m.me/profile.php?id=100005059277633"
                             target="_blank"

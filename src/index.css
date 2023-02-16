@@ -15,9 +15,10 @@
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-ms: 90%;
+    --container-width-XL: 75%;
+    --container-width-L: 80%;
+    --container-width-M: 70%;
+    --container-width-S: 90%;
     --transition: all 400ms ease;
 }
 html {
@@ -37,7 +38,7 @@ body {
 /* Genaral Styles */
 
 .container {
-    width: var(--container-width-lg);
+    width: var(--container-width-XL);
     margin: auto;
 }
 h1,
@@ -97,25 +98,26 @@ img {
     object-fit: cover;
 }
 
-/* Media Queries (MEDIUM DEVICES) */
+/*======Media Queries (LARGE DEVICES LAPTOP  1200px) ======*/
+
+/*========== Media Queries ( LAPTOP  1024px)============ */
 
 @media screen and (max-width: 1024px) {
     .container {
-        width: var(--container-width-md);
+        width: var(--container-width-L);
     }
     section {
         margin-top: 6rem;
-        padding: 1rem;
     }
 }
 
-/* Media Queries (SMALL DEVICES) */
+/* =========Media Queries (TABLET  768px)=========== */
 
 @media screen and (max-width: 768px) {
     .container {
-        width: var(--container-width-sm);
+        width: var(--container-width-M);
     }
     section {
-        margin-bottom: 2rem;
+        margin-top: 5rem;
     }
 }

@@ -1,7 +1,7 @@
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .portfolio-item {
@@ -29,10 +29,12 @@
     margin-bottom: 1rem;
 }
 
+/*======Media Queries (LARGE DEVICES LAPTOP  1200px) ======*/
+
 @media screen and (max-width: 1200px) {
     .portfolio-container {
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem 2rem;
     }
 }
 
@@ -45,8 +47,18 @@
 
 @media screen and (max-width: 768px) {
     .portfolio-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding: 0 2rem;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+    .portfolio-item-image {
+        height: 13rem;
+    }
+    .portfolio-item h3 {
+        font-size: 1.1rem;
+        height: fit-content;
+        text-align: center;
+    }
+    .portfolio-item-cta {
+        justify-content: center;
     }
 }

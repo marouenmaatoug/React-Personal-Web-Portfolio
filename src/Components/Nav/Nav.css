@@ -28,3 +28,9 @@ nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
 }
+
+@media screen and (max-width: 768px) {
+    nav a {
+        font-size: 0.8rem;
+    }
+}

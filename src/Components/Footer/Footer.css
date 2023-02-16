@@ -52,10 +52,12 @@ footer a {
 
 @media screen and (max-width: 768px) {
     .permalinks {
-        flex-direction: column;
         gap: 1.5rem;
     }
+    .footer-logo {
+        margin-bottom: 0rem;
+    }
     .footer-socials {
-        margin-bottom: 2.6rem;
+        margin-bottom: 1rem;
     }
 }

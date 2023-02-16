@@ -36,25 +36,28 @@
     margin-top: 6px;
     color: var(--color-primary);
 }
+
+/*========== Media Queries ( LAPTOP  1024px)============ */
+
 @media screen and (max-width: 1024px) {
-    .experience-container {
-        grid-template-columns: 1fr;
-    }
     .experience-container > div {
-        width: 80%;
+        width: 100%;
         padding: 2rem;
         margin: 0 auto;
     }
     .experience-content {
-        padding: 1rem;
+        column-gap: 0.5rem;
     }
 }
 @media screen and (max-width: 768px) {
     .experience-container {
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
     .experience-container > div {
-        width: 70%;
         padding: 2rem 1rem;
+    }
+    .experience-details {
+        justify-content: center;
     }
 }

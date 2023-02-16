@@ -61,9 +61,18 @@ header {
     font-size: 0.9rem;
 }
 
+/* =========Media Queries (TABLET  768px)=========== */
 @media screen and (max-width: 768px) {
     .header-socials,
     .scroll-down {
         display: none;
+    }
+    .header-container h1 {
+        font-size: 2rem;
+    }
+    .me {
+        width: 18rem;
+        height: 27rem;
+        left: calc(50% - 9rem);
     }
 }

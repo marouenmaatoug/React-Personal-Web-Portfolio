@@ -1,7 +1,7 @@
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .service {
@@ -43,11 +43,12 @@
     font-size: 0.9rem;
 }
 
+/*======Media Queries (LARGE DEVICES LAPTOP  1200px) ======*/
+
 @media screen and (max-width: 1200px) {
-    .services-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .container.services-container {
+        grid-template-columns: 1fr;
+        width: 50%;
     }
     .service-head {
         padding: 0.5rem;
@@ -55,19 +56,24 @@
     }
     .service {
         height: auto;
-        width: 80%;
+        width: 100%;
     }
     .service-list li {
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .services-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+/*========== Media Queries ( LAPTOP  1024px)============ */
+
+@media screen and (max-width: 1024px) {
+    .container.services-container {
+        width: 60%;
     }
-    .service {
-        width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .container.services-container {
+        width: var(--container-width-M);
+        gap: 1.5rem;
     }
 }
