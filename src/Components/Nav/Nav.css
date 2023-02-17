@@ -30,7 +30,20 @@ nav a.active {
 }
 
 @media screen and (max-width: 768px) {
+    nav {
+        bottom: unset;
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
+        border-radius: unset;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+        padding: 0.5rem 0.7rem;
+    }
     nav a {
-        font-size: 0.8rem;
+        padding: 0.4rem;
     }
 }

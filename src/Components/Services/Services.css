@@ -77,3 +77,15 @@
         gap: 1.5rem;
     }
 }
+@media screen and (max-width: 425px) {
+    .container.services-container {
+        width: var(--container-width-S);
+        gap: 1.5rem;
+    }
+    .service-list {
+        padding: 1.5rem 0.5rem;
+    }
+    .service-list p {
+        font-size: 0.8rem;
+    }
+}
